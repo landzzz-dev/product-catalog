@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.vuejs-bg {
+    background-image: url('/public/vue-js.jpg');
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.laravel-blade-bg {
+    background-image: url('/public/laravel-blade.jpg');
+    background-size: cover;
+    /* background-position: center; */
+}
+
+main {
+    @apply container mx-auto px-4 py-2
+}
+
+section {
+    @apply flex flex-col gap-4
+}
+
+section > div {
+    @apply flex flex-col gap-3
+}
+
+/* TABLE */
+.table-header thead tr th {
+    @apply py-2 px-4 border text-nowrap
+}
+
+.table-body tbody tr td {
+    @apply py-2 px-4 border
+}
+
+/* TEXT INPUT */
+.input {
+    @apply py-2 px-3 outline outline-1 outline-slate-400 rounded-md w-full
+}
+
+/* BUTTON */
+.success {
+    @apply px-4 py-2 text-nowrap border rounded-md bg-green-500 hover:bg-green-600 text-white
+}
+
+.primary {
+    @apply px-4 py-2 text-nowrap border rounded-md bg-blue-500 hover:bg-blue-600 text-white
+}
+
+.error {
+    @apply px-4 py-2 border rounded-md bg-red-500 hover:bg-red-600 text-white
+}

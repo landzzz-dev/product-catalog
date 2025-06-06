@@ -2,8 +2,6 @@
 
 @section('content')
     <section>
-        @if (Route::is('products.vue'))
-            <div id="app"></div>
-        @endif
+        <div id="app"></div>
     </section>
 @endsection

@@ -12,6 +12,7 @@ const vuetify = createVuetify({
         VTextField: {
             density: 'compact',
             variant: 'outlined',
+            clearable: true,
         },
         VAutocomplete: {
             density: 'compact',

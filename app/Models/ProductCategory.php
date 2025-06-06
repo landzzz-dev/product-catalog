@@ -9,6 +9,8 @@ class ProductCategory extends Model
 {
     use SoftDeletes;
 
+    protected $fillable = [ 'category_name' ];
+
     public function products()
     {
         return $this->belongsToMany(Product::class, 'pivot_product_categories', 'category_id', 'product_id');

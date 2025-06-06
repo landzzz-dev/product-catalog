@@ -3,11 +3,10 @@
 @section('content')
     <section>
         <div class="text-3xl text-center font-bold">Blade Page Products</div>
-        <div class="flex flex-row gap-4 w-full">
-            <button class="primary">
-                <a href="{{ route('products.create') }}">Add Product</a>
-            </button>
-            <input class="input" placeholder="Search..." type="text" name="search">
+        <div class="flex flex-row gap-4 w-full justify-space-between">
+            <a href="{{ route('products.create') }}" class="primary">Add Product</a>
+            {{-- <input class="input" placeholder="Search..." type="text" name="search"> --}}
+            <a href="{{ route('categories.blade') }}" class="primary">Switch To Product Categories</a>
         </div>
         <div class="w-full overflow-auto" style="height: calc(100vh - 200px)">
             <table class="table-auto table-header table-body">

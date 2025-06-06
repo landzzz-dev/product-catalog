@@ -11,7 +11,7 @@ $productObject = [
 
 @section('content')
     <section class="place-items-center">
-        <div class="w-auto sm:w-[450px]">
+        <div class="xs:w-auto sm:w-[450px]">
             <div class="flex items-center justify-between">
                 <span class="text-2xl">Create Product</span>
                 <a href="{{ route('products.blade') }}" class="primary">Back</a>
@@ -67,7 +67,7 @@ $productObject = [
                         @endif
                     </div>
                 @endforeach
-                <button type="submit" class="w-full mt-8 success">Save</button>
+                <button class="w-full mt-8 success">Save</button>
             </form>
         </div>
     </section>

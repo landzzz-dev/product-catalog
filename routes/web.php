@@ -32,6 +32,8 @@ Route::middleware(['auth', PreventBackHistory::class])->group(function () {
         Route::get('/{product}/update', 'update')->name('products.update');
         Route::put('/{product}/edit', 'edit')->name('products.edit');
         Route::delete('/{product}/delete', 'destroy')->name('products.delete');
+
+        // Route::resource('/', BladeProductController::class);
     });
     
     Route::prefix('/blade/categories')->controller(BladeCategoryController::class)->group(function () {

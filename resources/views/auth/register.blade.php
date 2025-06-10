@@ -25,7 +25,7 @@
                     <label for="{{ $user['name'] }}">{{ $user['label'] }} <span class="text-pink-500">*</span></label>
                     <input class="input" type="text" name="{{ $user['name'] }}">
                     @error($user['name'])
-                        <p class="text-pink-500">{{ $message }}</p>
+                        <p class="text-red-500">{{ $message }}</p>
                     @enderror
                 </div>
             @endforeach

@@ -15,7 +15,7 @@
                         <label for="{{ $product['name'] }}">{{ $product['label'] }}<span class="text-red-500">*</span></label>
                         @if ($product['name'] === 'product_category')
                             <div class="relative">
-                                <button type="button" class="w-full border border-slate-400 rounded p-2 flex flex-wrap items-center gap-1" id="dropdownButton" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownMenu">
+                                <button type="button" class="w-full outline outline-1 outline-slate-400 focus:outline-2 rounded p-2 flex flex-wrap items-center gap-1" id="dropdownButton" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownMenu">
                                     <span id="placeholderText" class="text-slate-500">Select Categories</span>
                                 </button>
                                 <div id="dropdownMenu" class="hidden absolute z-10 bg-white border rounded shadow-lg mt-1 w-full max-h-48 overflow-y-auto" role="listbox" tabindex="-1">
@@ -42,7 +42,7 @@
                                 <select 
                                     id="{{ $product['name'] }}"
                                     name="{{ $product['name'] }}" 
-                                    class="w-full p-2 border border-slate-400 rounded-md"
+                                    class="w-full p-2 outline outline-1 outline-slate-400 focus:outline-2 rounded-md"
                                 >
                                     <option value="1" @if($product['value'] == 1) selected @endif>Active</option>
                                     <option value="0" @if($product['value'] == 0) selected @endif>Inactive</option>
